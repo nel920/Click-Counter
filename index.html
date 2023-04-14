@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Button</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  #clickButton{
+      background-color:black;
+      border-color: black;
+      color: white;
+      padding: 10px 65px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #clickButton:hover {
+      background-color: rgb(0, 160, 0);
+      border-color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Click Counter</h1>
+    <button id="clickButton" onclick="counterFunc()" >Click me!</button>
+    <h2 id="clickCount" >Number of clicks: 0</h2>
+  </div>
+
+  <p id="demo"></p>
+  
+  <script src="index.js"></script>
+  
+</body>
+</html>
